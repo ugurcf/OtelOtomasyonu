@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E81C004F-E36F-4F65-A50B-DF02B9F30ADD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtelProjev1</RootNamespace>
+    <AssemblyName>OtelProjev1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calisan.cs" />
+    <Compile Include="FrmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListelemeİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListelemeİslemleri.Designer.cs">
+      <DependentUpon>FrmListelemeİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOtelGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOtelGuncelleme.Designer.cs">
+      <DependentUpon>FrmOtelGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOtelPuanVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOtelPuanVer.Designer.cs">
+      <DependentUpon>FrmOtelPuanVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOtelSilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOtelSilme.Designer.cs">
+      <DependentUpon>FrmOtelSilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonelBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelBilgi.Designer.cs">
+      <DependentUpon>FrmPersonelBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonelGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelGuncelle.Designer.cs">
+      <DependentUpon>FrmPersonelGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonelPuanlandırma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelPuanlandırma.Designer.cs">
+      <DependentUpon>FrmPersonelPuanlandırma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonelSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonelSil.Designer.cs">
+      <DependentUpon>FrmPersonelSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYorumYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYorumYap.Designer.cs">
+      <DependentUpon>FrmYorumYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashEntry.cs" />
+    <Compile Include="HashMap.cs" />
+    <Compile Include="HashMapChain.cs" />
+    <Compile Include="Heap.cs" />
+    <Compile Include="HeapDugumu.cs" />
+    <Compile Include="HeapSort.cs" />
+    <Compile Include="LinkedList2.cs" />
+    <Compile Include="LinkedListADT2.cs" />
+    <Compile Include="Node2.cs" />
+    <Compile Include="OtelVeriTabanıDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelVeriTabanıDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="İkiliAramaAgacDugumu.cs" />
+    <Compile Include="İkiliAramaAgaci.cs" />
+    <Compile Include="LinkedHashEntry.cs" />
+    <Compile Include="LinkedList.cs" />
+    <Compile Include="ListADT.cs" />
+    <Compile Include="MusteriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriForm.Designer.cs">
+      <DependentUpon>MusteriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOtelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOtelEkle.Designer.cs">
+      <DependentUpon>FrmOtelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Node.cs" />
+    <Compile Include="Otel.cs" />
+    <Compile Include="OtelVeriTabanıDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelVeriTabanıDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelVeriTabanıDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelVeriTabanıDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelVeriTabanıDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelVeriTabanıDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelVeriTabanıDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelVeriTabanıDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtelVeriTabanıDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtelYorumlari.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL.cs" />
+    <EmbeddedResource Include="FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListelemeİslemleri.resx">
+      <DependentUpon>FrmListelemeİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOtelGuncelleme.resx">
+      <DependentUpon>FrmOtelGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOtelPuanVer.resx">
+      <DependentUpon>FrmOtelPuanVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOtelSilme.resx">
+      <DependentUpon>FrmOtelSilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelBilgi.resx">
+      <DependentUpon>FrmPersonelBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelGuncelle.resx">
+      <DependentUpon>FrmPersonelGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelPuanlandırma.resx">
+      <DependentUpon>FrmPersonelPuanlandırma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonelSil.resx">
+      <DependentUpon>FrmPersonelSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYorumYap.resx">
+      <DependentUpon>FrmYorumYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriForm.resx">
+      <DependentUpon>MusteriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOtelEkle.resx">
+      <DependentUpon>FrmOtelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="OtelVeriTabanıDataSet.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet.xss">
+      <DependentUpon>OtelVeriTabanıDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet1.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet1.xss">
+      <DependentUpon>OtelVeriTabanıDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet2.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet2.xss">
+      <DependentUpon>OtelVeriTabanıDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet3.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet3.xss">
+      <DependentUpon>OtelVeriTabanıDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet4.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet4.xss">
+      <DependentUpon>OtelVeriTabanıDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet5.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet5.xss">
+      <DependentUpon>OtelVeriTabanıDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet6.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet6.xss">
+      <DependentUpon>OtelVeriTabanıDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet7.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet7.xss">
+      <DependentUpon>OtelVeriTabanıDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet8.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet8.xss">
+      <DependentUpon>OtelVeriTabanıDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet9.xsc">
+      <DependentUpon>OtelVeriTabanıDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="OtelVeriTabanıDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtelVeriTabanıDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtelVeriTabanıDataSet9.xss">
+      <DependentUpon>OtelVeriTabanıDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
